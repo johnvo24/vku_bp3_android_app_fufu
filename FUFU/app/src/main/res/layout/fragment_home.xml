@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_0"
+    android:padding="8dp"
+    android:orientation="vertical"
+    tools:context=".ui.main_component.fragment.HomeFragment">
+
+<!--    Features of app-->
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/j_btn_card"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_deals"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/OrangeRed"
+                        android:src="@drawable/ic_deal" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/deals"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/j_btn_card"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="15dp">
+                    <ImageButton
+                        android:id="@+id/btn_shop"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/primary_color"
+                        android:src="@drawable/ic_store" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/shop"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+<!--        <FrameLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_columnWeight="1">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/j_btn_card"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="8dp">-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    app:cardCornerRadius="15dp">-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/btn_food"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:background="@color/yellow_600"-->
+<!--                        android:src="@drawable/ic_restaurant" />-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:text="@string/food"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="11sp" />-->
+<!--            </LinearLayout>-->
+<!--        </FrameLayout>-->
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/j_btn_card"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_favorite"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/DeepPink"
+                        android:src="@drawable/ic_favorite" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/favorite"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/j_btn_card"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_travel"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/cyan_400"
+                        android:src="@drawable/ic_travel" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/travel"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </GridLayout>
+
+<!--    Food around you-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_color_0"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/food_around_you"
+            />
+        <TextView
+            android:id="@+id/act_see_more_food_around_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_1"
+            android:text="@string/see_more"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_food_around_you_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        android:scrollbarSize="0dp"/>
+
+<!--    Maybe you like-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_color_0"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/maybe_you_like"
+            />
+        <TextView
+            android:id="@+id/act_see_more_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_1"
+            android:text="@string/see_more"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_maybe_you_like_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        android:scrollbarSize="0dp"
+        />
+</LinearLayout>

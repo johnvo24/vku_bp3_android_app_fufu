@@ -1,0 +1,1 @@
+Các lớp đại diện cho các đối tượng dữ liệu

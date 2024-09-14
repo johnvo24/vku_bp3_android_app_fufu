@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/j_boxshadow_bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:padding="8dp">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_arrow_back"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:tint="@color/text_color_0"
+            android:backgroundTint="#00000000"
+            />
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            app:queryHint="Search here"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/j_search_bar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/btn_message"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_message"
+                android:background="@drawable/j_top_nav_btn"
+                android:layout_marginEnd="4dp"
+                app:tint="@color/grey_700" />
+            <ImageView
+                android:id="@+id/btn_avatar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="7dp"
+                android:src="@drawable/ic_person"
+                android:background="@drawable/j_top_nav_btn"
+                app:tint="@color/grey_700" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

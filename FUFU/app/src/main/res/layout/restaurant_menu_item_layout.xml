@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="item"
+            type="com.example.fufu.data.model.Item" />
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginVertical="2dp"
+        android:background="@drawable/j_btn_card"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/menu_item_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            imageUrl="@{ item.itemImg }"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:id="@+id/menu_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{item.itemName}"
+                android:textColor="@color/text_color_0"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:id="@+id/menu_item_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{"Giá: "+ item.itemPrice}'
+                android:textColor="@color/text_color_0"
+                android:textSize="@dimen/textDetail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/btn_add_cart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/j_btn_card"
+                android:backgroundTint="@color/primary_color"
+                android:src="@drawable/ic_add_card"
+                app:tint="@color/white"
+                />
+            <ImageButton
+                android:id="@+id/btn_remove_cart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/j_btn_card"
+                android:backgroundTint="@color/red_600"
+                android:src="@drawable/ic_remove_cart"
+                app:tint="@color/white"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

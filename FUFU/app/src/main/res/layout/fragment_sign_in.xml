@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.log_component.fragment.SignInFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edtAccountLogIn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_background"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="8dp"
+            android:hint="Phone"
+            android:padding="14dp"
+            android:textSize="16dp"
+            android:textColor="@color/grey_700"
+            android:textColorHint="@color/grey_700"/>
+
+        <EditText
+            android:id="@+id/edtPassLogIn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_background"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="14dp"
+            android:textSize="16dp"
+            android:textColor="@color/grey_700"
+            android:textColorHint="@color/grey_700"/>
+
+        <TextView
+            android:id="@+id/tvErrorLog"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/red_500"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/progressBarLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/cyan_A500"
+            android:text="Sign In"
+            android:textSize="16dp"
+            app:cornerRadius="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="or Sign In with"
+            android:textSize="16dp"
+            android:textColor="@color/grey_700"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/dark_blue"
+                android:drawableLeft="@drawable/fb_icon"
+                android:text="Facebook"
+                app:cornerRadius="40dp" />
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/gg_icon"
+                android:text="Google"
+                android:textColor="@color/black"
+                app:cornerRadius="40dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

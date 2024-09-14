@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="resource"
+            type="com.example.fufu.data.model.Resource" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginVertical="2dp"
+        android:paddingHorizontal="4dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="4dp"
+        android:background="@drawable/j_btn_card"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/resource_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            imageUrl="@{resource.resourcePath}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@{resource.createdAt}"
+            android:textSize="@dimen/textDetail"
+            android:textColor="@color/text_color_1"
+            app:layout_constraintTop_toBottomOf="@id/resource_image"
+            app:layout_constraintEnd_toEndOf="@id/resource_image"
+            />
+        <ImageButton
+            android:id="@+id/resource_btn_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_delete_outline"
+            android:background="@drawable/j_btn_card"
+            android:backgroundTint="@color/red_600"
+            android:layout_margin="2dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

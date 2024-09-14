@@ -1,0 +1,3 @@
+Repository là một tầng trung gian giữa ViewModel và DataSource (nơi lấy dữ liệu,
+ví dụ như cơ sở dữ liệu, API, file local, ...).
+Repository có nhiệm vụ điều phối và trung gian truy cập dữ liệu giữa ViewModel và DataSource.

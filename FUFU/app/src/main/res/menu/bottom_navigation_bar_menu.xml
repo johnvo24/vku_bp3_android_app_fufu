@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_navigation_bar_fufu"
+        android:icon="@drawable/ic_camera"
+        app:showAsAction="ifRoom"
+        android:title="@string/fufu" />
+
+    <item
+        android:id="@+id/bottom_navigation_bar_home"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/bottom_navigation_bar_orders"
+        android:icon="@drawable/ic_bill"
+        app:showAsAction="always"
+        android:title="@string/orders" />
+</menu>

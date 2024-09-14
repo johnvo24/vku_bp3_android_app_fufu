@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:padding="10dp"
+    android:background="@drawable/component_background"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgFoodOrder"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/food_test"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/foodNameOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bún Bò Huế"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/foodResOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quán: Thằng Bờm"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/foodAmountOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng: 2"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/foodTotalPriceOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng tiền: 40.000đ"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

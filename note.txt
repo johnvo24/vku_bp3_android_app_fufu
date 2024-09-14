@@ -1,0 +1,5 @@
+Chương I: Cơ sở lý thuyết (Sơ lược lập trình android -> về công nghệ(ví dụ: Ngôn ngữ, DB, ...))
+Chương II: Phân tích tkht (Giải thích bài toán, Phân tích, Sơ đồ hoạt động, Thuật toán tâm đắc)
+Chương III: Chương trình Demo (Hướng dẫn sử dụng)
+[Kết luận và hướng phát triển]: Làm được và chưa làm được
+[Tham khảo]

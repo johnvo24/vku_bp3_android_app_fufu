@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail_component.DetailActivity"
+    android:background="#f3f3f3"
+    android:scrollbars="vertical">
+
+    <ImageView
+        android:id="@+id/itemImgDetail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/food_test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemNameDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8dp"
+        android:paddingStart="10dp"
+        android:text="Bun Dau Mam Tom"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/itemImgDetail"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/item_detail_background"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameDetail"
+        tools:layout_editor_absoluteX="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_restaurant_24"
+                android:drawablePadding="8dp"
+                android:text="Tên Quán Ăn"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/itemResDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="Thang Bom"
+                android:textColor="@color/text_color_2"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/grey_500" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_money_24"
+                android:drawablePadding="8dp"
+                android:text="Giá"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/itemPriceDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Thang Bom"
+                android:textColor="@color/text_color_2"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:paddingStart="10dp"
+            android:text="Mô Tả"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/itemDesDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:textColor="@color/text_color_2"
+            android:paddingEnd="10dp"
+            android:text="Theo Phó chủ tịch Tổng LĐLĐ Việt Nam, đây là hoạt động
+            có ý nghĩa vô cùng quan trọng, khuyến khích đoàn viên, công
+             chức, viên chức, lao động cả nước nỗ lực rèn luyện, tu dưỡng,
+             học tập, lao động, sản xuất, đóng góp cho sự phát triển chung
+             của cơ quan, đơn vị, doanh nghiệp; vượt lên khó khăn, thúc đẩy
+             phát triển kinh tế, xã hội; nâng cao chất lượng hoạt động, đổi
+             mới tổ chức công đoàn, góp phần xây dựng giai cấp công nhân
+             hiện đại, lớn mạnh và xây dựng tổ chức Công đoàn Việt Nam vững
+             mạnh.Theo Phó chủ phát triển kinh tế, xã hội; nâng cao chất lượng hoạt động, đổi
+             mới tổ chức công đoàn, góp phần xây dựng giai cấp công nhân
+             hiện đại, lớn mạnh và xây dựng tổ chức Công đoàn Việt Nam vững
+             mạnh.Theo Phó chủ tịch Tổng LĐLĐ Việt Nam, đây phát triển kinh tế, xã hội; nâng cao chất lượng hoạt động, đổi
+             mới tổ chức công đoàn, góp phần xây dựng giai cấp công nhân
+             hiện đại, lớn mạnh và xây dựng tổ chức Công đoàn Việt Nam vững
+             mạnh.Theo Phó chủ tịch Tổng LĐLĐ Việt Nam, đây  tịch Tổng LĐLĐ Việt Nam, đây là hoạt động có ý nghĩa vô cùng quan trọng, khuyến khích đoàn viên, công chức, viên chức, lao động cả nước nỗ lực rèn luyện, tu dưỡng, học tập, lao động, sản xuất, đóng góp cho sự phát triển chung của cơ quan, đơn vị, doanh nghiệp; vượt lên khó khăn, thúc đẩy phát triển kinh tế, xã hội; nâng cao chất lượng hoạt động, đổi mới tổ chức công đoàn, góp phần xây dựng giai cấp công nhân hiện đại, lớn mạnh và xây dựng tổ chức Công đoàn Việt Nam vững mạnh."
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/order_quantity_background"
+        android:orientation="vertical">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingTop="4dp"-->
+<!--            android:paddingBottom="4dp">-->
+<!--            -->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Số lượng đặt:"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:layout_weight="1"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/grey_background"-->
+<!--                android:layout_marginEnd="10dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/btnMinus"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:background="@drawable/item_detail_background"-->
+<!--                    android:text="-"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_margin="4dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvQuantity"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:text="0"-->
+<!--                    android:textSize="22dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="4dp"-->
+<!--                    android:layout_marginEnd="4dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/btnPlus"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:background="@drawable/item_detail_background"-->
+<!--                    android:text="+"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_margin="4dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:text="Đặt Món Ngay"
+            android:textSize="18dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
