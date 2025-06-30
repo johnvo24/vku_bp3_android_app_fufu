@@ -33,7 +33,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC8Gxff3Ay_XGV0snda_NfdSZp1RyFBSnQ" />
+            android:value="EMPTY" />
 
         <activity
             android:name=".ui.cart_component.CartActivity"
